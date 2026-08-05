@@ -1,4 +1,4 @@
-import os
+﻿import os
 import cv2
 import numpy as np
 import rasterio
@@ -21,8 +21,8 @@ YOLO_MODEL_PATH = "./weights/best.pt"
 TILE_TASKS = [
     {
         "name": "PIG_Landsat8_Test",
-        "input": "./data/input/L8_median_composite_2019-12-01_to_2020-03-31.tif",
-        "output": "./data/output/L8_Damage_Probability_Map.tif"
+        "input": "./examples/input/test_sample_PIG.tif",
+        "output": "./examples/output/test_sample_probability.tif"
     }
 ]
 
@@ -128,11 +128,11 @@ def process_single_tile(tile_info):
     tile_name = tile_info["name"]
 
     print(f"\n" + "=" * 50)
-    print(f"🚀 Initializing processing for: {tile_name}")
+    print(f"Initializing processing for: {tile_name}")
     print("=" * 50)
 
     if not os.path.exists(input_tif):
-        print(f"❌ Error: Input file not found: {input_tif}")
+        print(f"Error: Input file not found: {input_tif}")
         print("Please check the relative path.")
         return
 
@@ -241,7 +241,7 @@ def process_single_tile(tile_info):
     with rasterio.open(output_tif, 'w', **profile) as dst:
         dst.write(global_prob_map.astype(np.float32), 1)
 
-    print(f"✅ Success! Continuous probability map saved to: {output_tif}")
+    print(f"Success! Continuous probability map saved to: {output_tif}")
 
 
 if __name__ == "__main__":

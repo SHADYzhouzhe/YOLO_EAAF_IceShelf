@@ -1,4 +1,4 @@
-"""
+﻿"""
 YOLO-OBB Training Pipeline for Antarctic Ice Shelf Damage Detection
 Repository: YOLO-EAAF-IceShelf
 """
@@ -10,7 +10,7 @@ from ultralytics import YOLO
 # ==========================================
 # Ensure these paths are configured in your environment or passed via args
 MODEL_PRETRAINED = 'yolo26s-obb.pt'
-DATASET_CONFIG = 'glacier.yaml'  # Ensure this file exists in your repo
+DATASET_CONFIG = 'configs/glacier_example.yaml'  # Ensure this file exists in your repo
 PROJECT_NAME = 'YOLO_EAAF_Training'
 NAME = 'train_obb_optim'
 

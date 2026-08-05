@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "Deep Learning-Guided Energy-Augmented Anisotropic Frangi Filtering for Antarctic Ice-Shelf Damage Detection"
+version: 1.0.0
+date-released: 2026-08-06
+doi: 10.5281/zenodo.21794050
+url: "https://github.com/SHADYzhouzhe/YOLO_EAAF_IceShelf"
+repository-code: "https://github.com/SHADYzhouzhe/YOLO_EAAF_IceShelf"
+license: MIT
+
+authors:
+  - family-names: Zhou
+    given-names: Zhe
+  - family-names: An
+    given-names: Lu
+  - family-names: Li
+    given-names: Jing
+  - family-names: Yang
+    given-names: Zhiwen
+
+keywords:
+  - Antarctic ice shelves
+  - damage detection
+  - YOLO
+  - Frangi filter
+  - remote sensing
+  - deep learning
