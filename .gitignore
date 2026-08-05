@@ -1,0 +1,35 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+
+# Training and inference outputs
+runs/
+outputs/
+checkpoints/
+YOLO_EAAF_Training/
+examples/output/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+
+# Large geospatial files
+*.tif
+*.tiff
+
+# Keep the public example input
+!examples/input/test_sample_PIG.tif
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
