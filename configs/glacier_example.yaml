@@ -1,4 +1,4 @@
-﻿# Example Ultralytics YOLO-OBB dataset configuration.
+# Example Ultralytics YOLO-OBB dataset configuration.
 # Replace the root path with the location of your local dataset.
 
 path: /path/to/yolo_obb_dataset
@@ -8,4 +8,4 @@ val: images/val
 test: images/test
 
 names:
-  0: ice_shelf_damage
+  0: damage
